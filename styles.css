@@ -1,5 +1,190 @@
-*{
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: Circular-bold;
+    src: url("/font/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2");
+  }
+  @font-face {
+    font-family: Circular-book;
+    src: url("/font/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");
+  }
+.logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+.logo-name{
+    overflow: hidden;
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size:200%;
+    margin-top: 23px;
+    margin-left: -12px;
+}
+.logo-container{
+    border-bottom: 1px solid #d9dadc;
+}
+/*---------- FACEBOOK BUUTON---------------*/
+.content{
+    margin: 0 auto;
+    max-width: 450px;
+}
+.button{
+    margin-top: 10px;
+    border-radius: 500px;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    font-family:Circular-book ;
+    transition-duration: .3s;
+    border-width: 0;
+    letter-spacing: 2px;
+    min-width: 160px;
+    font-weight: 600;
+    padding: 11px 14px 18px;
+    text-transform: uppercase;
+    font-size: 13px;
+    
+}
+@media only screen and (max-width: 350px)
+{
+    .facebook-image{ 
+        display:none;
+        
+    }
+    .button{
+        height: 80px;
+    }
+    .apple-image{ display:none; }
+    .google-image{ display:none; }
+}
+.facebook-login{
+    
+    background: #3b5998;
+}
+a, a:focus, a:hover {
+    text-decoration: none;
+}
+.facebook-login a{
+    color: white;
+    text-decoration: none;
+}
+.facebook-login:hover{
+    background-color: rgb(49, 49, 172);
+    cursor: pointer;
+    transition-duration: .3s;
+}
+.facebook-image{
+    height: 16px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+}
+.apple-login a{
+    color: white;
+}
+.apple-login{
+    background: #000;
+}
+.apple-login:hover{
+    background-color: #2a2c2e;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+.apple-image{
+        height: 17px;
+        margin-bottom: 7px;
+        margin-right: 5px;
+}
+.google-login {
+    background-color: transparent;
+    border: 1px solid #616467;
+}
+.google-login a{
+    color: #616467;
+}
+.google-login:hover{
+    
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    cursor: pointer;
+    background-color:#616467;
+}
+.google-login a:hover{
+    color: white;
+}
+.google-image{
+    height: 18px;
+    margin-bottom: 4px;
+}
+/* Divider */
+.divider{
+    width: 100%;
+    display: block;
+    border-top: 1px solid #d9dadc;
+    margin: 15px 0;
+    line-height: 1px;
+    text-align: center;
+    position: relative;
+    
+}
+.divider-title{
+    background: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+/*  Input form  */ 
+.form-control{
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9dadc;
+    border-radius: 0;
+}
+.forgot-password{
+    text-decoration: underline;
+    color: #616467;
+}
+.forgot-password:hover{
+    color: #15883e;
+    text-decoration: underline;
+}
+input[type=checkbox] + label{
+    margin: 0.2em;
+}
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox] + label:before{
+    content: "\2713";
+    border: 1px solid #15883e ;
+    border-radius:0.2em;
+    display: inline-block;
+    width: 22px;
+    height: 23px;
+    padding-left:2px;
+    margin-right: 12px;
+    padding-left: 5px;
+    vertical-align: bottom;
+    color: transparent;
+}
+input[type=checkbox]:checked + label:before{
+    background-color:#15883e ;
+    color: white;
+}
+input[type=checkbox]:focus~#checkbox{
+    border-color: #1ed760;
+    outline: 0;
+}
+.login-enter{
+    background-color: #15883e;
 
+}
+.login-enter:hover{
+    background-color:#1ed760 ;
+    cursor: pointer;
+}
+.login-enter a{
+    color: #fff;
 }
