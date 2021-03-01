@@ -1,6 +1,5 @@
 * {
     color: white !important;
-    font-family: 'Montserrat', sans-serif;
 }
 .container {
     background: rgb(25,20,20);
@@ -19,3 +18,11 @@ span{
 .border-bottom {
     border-color: #1DB954 !important;
 }
+@font-face {
+    font-family: Circular-bold;
+    src: url("/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2");
+}
+@font-face {
+    font-family: Circular-book;
+    src: url("/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");
+  }
