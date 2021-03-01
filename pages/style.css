@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Circular-bold;
+  src: url("/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2");
+}
+@font-face {
+  font-family: Circular-book;
+  src: url("/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");
+}
+
+body {
+  font-family: "Circular-book", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.link-group {
+  list-style: none;
+}
+
+section {
+  color: #ccc;
+  height: 330px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h1,
+h3 {
+  font-family: "Circular-bold", sans-serif;
+  color: #fff;
+}
+
+p.small-size {
+  font-size: 80%;
+}
+
+.bg-img {
+  background: url(https://www.queenonline.com/global/uploads/86.jpg) no-repeat
+    center center/cover;
+  box-shadow: inset 100px 100px 200px rgba(0, 0, 0, 0.9),
+    inset -100px -100px 200px rgba(0, 0, 0, 0.9);
+}
+
+div ul li a {
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: none !important;
+}
+
+div ul li a:hover {
+  color: #fff;
+  border-bottom: 2px solid #1ed760;
+}
+
+.btn {
+  color: #fff;
+  background-color: transparent;
+  font-size: 10px;
+}
+
+.btn-1,
+.btn-2 {
+  border-radius: 20px;
+  padding: 5px 30px;
+  border: 1px solid #fff;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+  background-color: #1ed760;
+  border: 1px solid #1ed760;
+  color: #fff;
+}
+
+.btn-3 {
+  font-size: 180%;
+  padding-bottom: 15px;
+}
+
+.btn-3:hover {
+  color: white;
+}
+
+div .bg-mine,
+div .card-body {
+  background-color: #222326;
+}
+
+p.card-text {
+  color: #fff;
+}
+div .card-body:nth-child(2) {
+  color: #ccc;
+}
+
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+div.row {
+  font-size: 12px;
+}
