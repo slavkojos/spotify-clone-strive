@@ -19,7 +19,7 @@ body {
 
 section {
   color: #ccc;
-  height: 330px;
+  height: 320px;
 }
 
 h1 {
@@ -39,18 +39,19 @@ h3 {
 
 p.small-size {
   font-size: 80%;
+  color: rgb(204 204 204 / 70%);
 }
 
 .bg-img {
   background: url(https://www.queenonline.com/global/uploads/86.jpg) no-repeat
     center center/cover;
   box-shadow: inset 100px 100px 200px rgba(0, 0, 0, 0.9),
-    inset -100px -100px 200px rgba(0, 0, 0, 0.9);
+    inset -100px -100px 200px rgba(0, 0, 0, 0.85);
 }
 
 div ul li a {
   color: #ccc;
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: none !important;
 }
 
@@ -90,12 +91,14 @@ div ul li a:hover {
 
 div .bg-mine,
 div .card-body {
-  background-color: #222326;
+  background-color: #151516;
 }
 
 p.card-text {
   color: #fff;
+  margin-bottom: 0.7rem;
 }
+
 div .card-body:nth-child(2) {
   color: #ccc;
 }
@@ -107,4 +110,18 @@ div .card-body:nth-child(2) {
 
 div.row {
   font-size: 12px;
+}
+
+div.col-10 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div.row div.col-lg-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div.card-body {
+  padding: 0.8rem;
 }
