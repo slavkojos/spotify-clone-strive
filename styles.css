@@ -37,6 +37,18 @@ span{
     opacity:0.5;
 }
 
+.dropdown-menu {
+    background-color:#282828 !important;
+}
+
+.dropdown-item {
+    padding-top: 0;
+    padding-bottom: 3px;
+}
+
+.dropdown-item:hover {
+    background-color: #404040 !important;
+}
 @font-face {
     font-family: Circular-bold;
     src: url("/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2");
