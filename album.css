@@ -1,0 +1,114 @@
+body {
+  font-family: Circular-book;
+}
+@font-face {
+  font-family: Circular-bold;
+  src: url("/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2");
+}
+@font-face {
+  font-family: Circular-book;
+  src: url("/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");
+}
+/* -------------------------------------------------------SIDEBAR */
+
+#sidebar {
+  background-color: black;
+}
+
+#spotify-logo-container img {
+  width: 130px;
+  height: 80px;
+}
+
+.sidebar-links,
+.artist-name,
+.album-year-songs,
+#spotify-logo-container img,
+.artist-name,
+.song-duration {
+  color: #b3b3b3;
+}
+
+hr {
+  background-color: #b3b3b3;
+}
+
+#user-img {
+  height: 25px;
+  width: 25px;
+}
+
+/* -------------------------------------SIDEBAR ENDS HERE */
+
+#album-info {
+  padding-left: 200px;
+  margin-top: 50px;
+}
+
+#album-info img {
+  width: 300px;
+  height: 300px;
+}
+
+#album-actions img {
+  width: 25px;
+  height: 25px;
+}
+
+.song-id-wrapper {
+  text-align: end;
+  width: 10px;
+}
+
+#songs-column {
+  height: 90vh;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0c0b0b;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(95, 95, 95);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* --------------------------------PLAYER------------------------------------ */
+
+#player-info img {
+  width: 60px;
+  height: 60px;
+}
+
+.player-buttons img {
+  width: 20px;
+  height: 20px;
+  color: #b3b3b3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#player-controls-mid {
+  width: 40%;
+}
+.progress {
+  background-color: #b3b3b3;
+  height: 3px;
+  border-radius: 20px;
+}
+#volume-controls img {
+  width: 20px;
+  height: 20px;
+}
+
+.volume-bar {
+  background-color: #b3b3b3;
+  height: 3px;
+  width: 100px;
+  border-radius: 20px;
+}
