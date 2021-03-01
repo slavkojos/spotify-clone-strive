@@ -1,0 +1,21 @@
+* {
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    background: rgb(25,20,20);
+    background: linear-gradient(320deg, rgba(25,20,20,1) 0%, rgba(36,69,108,1) 100%);
+}
+.card-body {
+    padding: 0.25rem;
+}
+.card {
+    width: 150px;
+    background-color: inherit;
+}
+span{
+    font-size: 10px;
+}
+.border-bottom {
+    border-color: #1DB954 !important;
+}
