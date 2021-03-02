@@ -20,14 +20,11 @@
   <!-- login-page-->
   <!-- logo-start-->
   <body>
-      <div class="container-fluid logo-container">
+      <div class="container-fluid logo-container w-100">
         <div class="row ">
           <div class="col-sm-6 offset-sm-3">
-            <div class="col-12 offset-sm-3">
-              <img class="logo" src="/logo/spotify-logo.png" alt="spotify-logo">
-              <div class="logo-container">
-                <span class=" logo-name">Spotify</span>
-                <span><img class="r-icon" src="/logo/icons8-circled-r-24.png" alt="r-logo"></span>
+            <div class="d-flex justify-content-center ">
+              <a href="https://www.spotify.com/ie/premium/?utm_source=ie-en_brand_contextual-desktop_text&utm_medium=paidsearch&utm_campaign=alwayson_emea_ie_premiumbusiness_core_brand+contextual-desktop+text+exact+ie-en+google&gclid=Cj0KCQiA4feBBhC9ARIsABp_nbXZRcW_DnJ3MNGZyEK_UDd5w53xuhG4I_Q3tP_wEtXHZedYfAsu84EaArHtEALw_wcB&gclsrc=aw.ds"><img class="logo" src="/logo/Spotify_Logo_CMYK_Black.png" alt="spotify-logo"></a>
             </div>   
             </div>
         </div>
@@ -35,23 +32,36 @@
     </div>
       <!-- logo-End-->
       <!-- content-start-->
-      <div class="container mt-3 content">
+  <div class="container mt-3 content w-100">
        <!-- <p><strong>To continue, log in to Spotify</strong></p>-->
+       <div class="row">
+        <div class="col-sm-12">
+          <form action="https://www.facebook.com/" target="_blank">
+            <button type="submit" class="facebook-login button">
+              <img class="facebook-image" src="/logo/icons8-facebook.svg" alt="icon-facebook">continue with facebook
+            </button>
+          </form>
+        </div>
+      </div>
         <div class="row">
           <div class="col-sm-12">
-            <div class="facebook-login button"><img class="facebook-image" src="/logo/icons8-facebook.svg" alt=""><span><a href="https://www.facebook.com/" > continue with facebook</a></span></div>
+            <form action="https://www.icloud.com/" target="_blank">
+              <button type="submit" class="apple-login button">
+                <img class="apple-image" src="/logo/icons8-apple-logo.svg" alt="icon-apple">continue with apple
+              </button>
+            </form>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <div class="apple-login button"><img class="apple-image" src="/logo/icons8-apple-logo.svg" alt=""><span><a href="https://www.icloud.com/"> continue with apple</a></span></div>
+              <form action="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+              <button type="submit" class="google-login-and-sign-up button"><img class="google-image" src="/logo/icons8-google.svg" alt="icon-google"> continue with google</button>
+            </form>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="google-login button"><img class="google-image" src="/logo/icons8-google.svg" alt=""><span><a href="https://www.facebook.com/"> continue with google</a></span></div>
-          </div>
-        </div>
+        <!-- Triying -->
+
+        <!-- Triying End -->
               <!-- divider -->
         <div class="row">
           <div class="col-sm-12">
@@ -79,7 +89,7 @@
           <div class="row">
             <div class="col-sm-12">
               <p>
-                <a class="forgot-password" href="#"> Forgot your password? </a>
+                <a class="forgot-password" href="https://www.spotify.com/ie/password-reset/" target="_blank"> Forgot your password? </a>
               </p>
             </div>
           </div>
@@ -103,19 +113,33 @@
             </div>
         </form>
       <!-- Last part -->
-      <div class="row">
-        <div class="col-12"> 
-           <h2> Don't have an account? </h2>
-         </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="google-login button"><a href="https://www.facebook.com/"> Sing up for spotify </a></div>
-          </div>
-        </div>
-    </div>
- 
-      <!--content-start-->
+          <div class="row">
+            <div class="col-lg-12 "> 
+               <h4 class="d-flex justify-content-center"> Don't have an account? </h4>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div>
+                  <form action="https://www.spotify.com/ie/signup/?forward_url=https%3A%2F%2Fwww.spotify.com%2Fie%2Fpurchase%2Foffer%2Fdefault-trial-1m%2F%3Fcountry%3DIE" target="_blank">
+                  <button class="google-login-and-sign-up button">Sign up for spotify</button>
+                </form>
+                </div>
+              </div>
+            </div>
+    
+    <!-- Foot -->
+            <div class="container ">
+              <div class="row ">
+                <div class="col-12 footer-container">
+                  <p> If you click"Log in with Facebook" and are not a Spotify user, you will be registered and you agree to Spotify's <strong><a href="https://www.spotify.com/us/legal/end-user-agreement/"> Terms & conditions </a></strong>and<strong><a href="https://www.spotify.com/ie/legal/privacy-policy/"> Privacy Policy</a></strong></p>
+                </div>
+              </div>
+            </div>
+  </div>
+
+
+
 
 
     <!-- Optional JavaScript; choose one of the two! -->

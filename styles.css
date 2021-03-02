@@ -6,35 +6,25 @@
     font-family: Circular-book;
     src: url("/font/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");
   }
+  body{
+      font-family: Circular-book;
+  }
+  /*---------- Logo nav---------------*/
 .logo{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 173px;
+    padding-top: 13%;
+    padding-bottom: 12%;
 }
-.logo-container{
-    position: relative;
-    display: inline-block;
-}
-.logo-name{
-    position: absolute;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    font-size:200%;
-    margin-top: -27px;
-    margin-left: -18px;
-}
-.r-icon {
-    position: absolute;
-    width: 8px;
-    margin-left: 79px;
-    margin-top: -7px;
-}
+
 .logo-container{
     border-bottom: 1px solid #d9dadc;
 }
-/*---------- FACEBOOK BUUTON---------------*/
+/*---------- container---------------*/
 .content{
-    margin: 0 auto;
+
     max-width: 450px;
 }
+/*---------- BUTTON---------------*/
 .button{
     margin-top: 10px;
     border-radius: 500px;
@@ -49,34 +39,35 @@
     font-weight: 600;
     padding: 11px 14px 18px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     
 }
-@media only screen and (max-width: 350px)
+/* media screen */
+@media only screen and (max-width: 305px)
 {
-    .facebook-image{ 
-        display:none;
-        
-    }
-    .button{
+    .logo{
         height: 80px;
+    } 
+    button[class="facebook-login button"], button[class="apple-login button"], button[class="google-login-and-sign-up button"]{
+        height: 70px;
     }
+    .facebook-image{ display:none;}
     .apple-image{ display:none; }
     .google-image{ display:none; }
 }
-.facebook-login{
-    
-    background: #3b5998;
-}
+/* Standart link */
 a, a:focus, a:hover {
     text-decoration: none;
+    padding: 0px;
 }
-.facebook-login a{
+
+/* Facebook button */
+.facebook-login{
     color: white;
-    text-decoration: none;
+    background: #3b5998;
 }
 .facebook-login:hover{
-    background-color: rgb(49, 49, 172);
+    background-color: #48649F;
     cursor: pointer;
     transition-duration: .3s;
 }
@@ -85,10 +76,9 @@ a, a:focus, a:hover {
     margin-bottom: 8px;
     margin-right: 4px;
 }
-.apple-login a{
-    color: white;
-}
+/* Apple Button */
 .apple-login{
+    color: white;
     background: #000;
 }
 .apple-login:hover{
@@ -101,22 +91,19 @@ a, a:focus, a:hover {
         margin-bottom: 7px;
         margin-right: 5px;
 }
-.google-login {
+/* Google button */
+.google-login-and-sign-up {
     background-color: transparent;
-    border: 1px solid #616467;
+    border: 2px solid #616467;
 }
-.google-login a{
+.google-login-and-sign-up{
     color: #616467;
 }
-.google-login:hover{
-    
-    color: #616467;
+.google-login-and-sign-up:hover{
     box-shadow: inset 0 0 0 2px #616467;
-    background-color: transparent;
     cursor: pointer;
+    transition-duration: .3s;
     background-color:#616467;
-}
-.google-login a:hover{
     color: white;
 }
 .google-image{
@@ -128,20 +115,27 @@ a, a:focus, a:hover {
     width: 100%;
     display: block;
     border-top: 1px solid #d9dadc;
-    margin: 15px 0;
+    margin: 20px 0;
     line-height: 1px;
     text-align: center;
     position: relative;
+
     
 }
 .divider-title{
+    padding-top: 100px;
     background: #fff;
     font-size: 12px;
     letter-spacing: 1px;
     padding: 0 20px;
     text-transform: uppercase;
 }
-/*  Input form  */ 
+/*  Input form  */
+::placeholder {
+    color: #616467 !important;
+    font-weight:600;
+  }
+  
 .form-control{
     width: 100%;
     height: 40px;
@@ -170,23 +164,21 @@ input[type=checkbox] + label:before{
     border: 1px solid #15883e ;
     border-radius:0.2em;
     display: inline-block;
-    width: 22px;
-    height: 23px;
-    padding-left:2px;
-    margin-right: 12px;
-    padding-left: 5px;
+    width: 20px;
+    height: 20px;
+    padding-left:3px;
+    margin-right: 7px;
     vertical-align: bottom;
     color: transparent;
+    cursor: pointer;
 }
 input[type=checkbox]:checked + label:before{
     background-color:#15883e ;
     color: white;
 }
-input[type=checkbox]:focus~#checkbox{
-    border-color: #1ed760;
-    outline: 0;
-}
+
 .login-enter{
+    margin-top: 0px;
     background-color: #15883e;
 
 }
@@ -196,4 +188,35 @@ input[type=checkbox]:focus~#checkbox{
 }
 .login-enter a{
     color: #fff;
+}
+.sign-up{
+    background-color: transparent;
+    border: 1px solid #616467;
+}
+h4{
+    letter-spacing: normal;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: inherit;
+    font-weight: 900;
+    line-height: 1.1;
+    color: inherit;
+    margin: .5em 0 .25em;
+}
+.footer-container{
+    margin-top: 15px;
+    border-top: 1px solid #d9dadc;
+    justify-content: center;
+}
+.footer-container p strong a{
+    color: #15883e;
+}
+.footer-container p{
+    color: #616467;
+    margin-top: 15px;
+    font-family: Circular-book;
+    text-align: center;
+    font-size: 10px;
+    
 }
