@@ -5,9 +5,11 @@
     background: rgb(25,20,20);
     background: linear-gradient(320deg, rgba(25,20,20,1) 0%, rgba(36,69,108,1) 100%);
 }
+
 .card-body {
     padding: 0.25rem;
 }
+
 .card {
     width: 150px;
     background-color: inherit;   
@@ -16,8 +18,9 @@
 span{
     font-size: 10px;
 }
-.border-bottom {
-    border-color: #1DB954 !important;
+
+.active {
+    border-bottom: 1px solid #1DB954 !important;
 }
 
 .icons {
@@ -42,17 +45,19 @@ span{
 }
 
 .dropdown-item {
-    padding-top: 0;
+    padding-top: 3px;
     padding-bottom: 3px;
 }
 
 .dropdown-item:hover {
     background-color: #404040 !important;
 }
+
 @font-face {
     font-family: Circular-bold;
     src: url("/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2");
 }
+
 @font-face {
     font-family: Circular-book;
     src: url("/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");

@@ -24,286 +24,1403 @@
         <div class="container col-10">
             <div class="row my-4">
                 <div class="col col-4 mx-auto d-flex flex-row justify-content-between">
-                    <span class="border-bottom">TRENDING</span>
-                    <span>PODCAST</span>
-                    <span>MOODS AND GENRES</span>
-                    <span>NEW RELEASES</span>
-                    <span>DISCOVER</span>
+                    <span id="trending-btn">TRENDING</span>
+                    <span id="pod-btn">PODCAST</span>
+                    <span id="mood-btn">MOODS AND GENRES</span>
+                    <span id="new-btn">NEW RELEASES</span>
+                    <span id="discover-btn">DISCOVER</span>
                 </div>
             </div>
-            <div class="row my-4 mx-5">
-                <div class="col col-12 ml-5">
-                    <h2 class="font-weight-bold">#THROWBACKTHURSDAY</h2>
-                    <div class="row my-4 d-flex justify-content-start">
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://i.scdn.co/image/ab67706f000000035d73b2a5cb261ee9c43d9ec7" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">Yatch Rock</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+            <div class="tabs">
+              <div id="trending" class="d-none">
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">#THROWBACKTHURSDAY</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f000000026705dfb8f5445fa4fdddf374" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">This is Queen</p>
                                 </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://i.scdn.co/image/ab67706f00000003a3aa0684281d8c86c6d143a5" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">Legendary</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
                             </div>
-                        </div>
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://i.scdn.co/image/ab67706f00000003dc983c18c09291901b75e3ef" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">70s Rock Anthems</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f000000035d73b2a5cb261ee9c43d9ec7" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Yatch Rock</p>
                                 </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://i.scdn.co/image/ab67706f000000037691acebf96bbd1449d61cff" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">Rock Classics</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
                             </div>
-                        </div>
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat_LARGE-en.jpg" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">On Repeat</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f00000003a3aa0684281d8c86c6d143a5" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Legendary</p>
                                 </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://i.scdn.co/image/ab67706f00000003e649da22aa371c86c801603f" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">Have a Great Day</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f00000003dc983c18c09291901b75e3ef" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">70s Rock Anthems</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f000000037691acebf96bbd1449d61cff" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Rock Classics</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat_LARGE-en.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">On Repeat</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row my-4 mx-5">
-                <div class="col col-12 ml-5">
-                    <h2 class="font-weight-bold">CLASSIFICHE</h2>
-                    <div class="row my-4 d-flex justify-content-start">
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_large.jpg" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">Global Top 50</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">CLASSIFICHE</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_large.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Global Top 50</p>
                                 </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://i.scdn.co/image/ab67706f00000003ce16b67928220d1e86978425" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">Top Hits Workout</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
                             </div>
-                        </div>
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://lineup-images.scdn.co/wrapped-2020-discovery_LARGE-en.jpg" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">Missed Hits</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f00000003ce16b67928220d1e86978425" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Top Hits Workout</p>
                                 </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mr-3 mt-1" style="border: 0px;">
-                            <img src="https://i.scdn.co/image/ab67706c0000bebb078178585aebb13e875c03ad" class="card-img-top" alt="...">
-                            <div class="overlay"></div>
-                            <div class="card-body">
-                            <p class="card-text text-center">Techno Top 50</p>
-                            </div>
-                            <div class="container-fluid d-flex justify-content-between align-items-center icons">
-                              <i class="far fa-heart"></i>
-                              <i class="fas fa-play-circle fa-2x"></i>
-                              <div class="dropdown">
-                                <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                                  <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Go to Playlist Radio</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Report</a>
-                                  <a class="dropdown-item" href="#">Save to your library</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Create Similar Playlist</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Share</a>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://lineup-images.scdn.co/wrapped-2020-discovery_LARGE-en.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Missed Hits</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706c0000bebb078178585aebb13e875c03ad" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Techno Top 50</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+              </div>
+            </div>
+            <div class="tabs">
+              <div id="podcast" class="d-none">
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">The Top Podcasts of 2020</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/d3ae59a048dff7e95109aec18803f22bebe82d2f" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">The Joe Rogan Experience</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/e048b26a93dc026381ab0107e6c01e4e3417b14a" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">TED Talks Daily</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/99dfb62c69842feb9a605c306231bb8276dcb28c" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Audible Original</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ef7169efd54b3b79367c17eb9e1972159a2d5fa3" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Keep It!</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/324b25f790810f21c29f0e569c3b1914a78aeed1" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Invisibilia</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/f1118dbc63abfeda8c76f884c1c7341ab0a25460" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Popcast</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">Popular right now</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/6dabc6d8555d27aba4197b61a3160621aed19734" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">All Fantasy Everything</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/9fa3c82f5f34f05749f7bfb2ed61c4f8a21c3839" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">CoinTalk</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/dc97de6372c3d334b8ae654055c090a13f1399dd" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Vent City</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/3ee260089f7a2899d6d7a831fa982dfc23f94385" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Life Kit</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs">
+              <div id="moods" class="d-none">
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">Your Top Genres</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://t.scdn.co/media/derived/icon-274x274_aeeb8eb70c80e2b701b25425390a1737_0_0_274_274.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Blues</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Rock</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://t.scdn.co/images/2a93c8757cc240baa0c0e0347455d4bf" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Jazz</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Pop</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://t.scdn.co/media/derived/edm-274x274_0ef612604200a9c14995432994455a6d_0_0_274_274.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Dance/Electronic</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://t.scdn.co/media/derived/classical-274x274_abf78251ff3d90d2ceaf029253ca7cb4_0_0_274_274.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Classical</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">Moods</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f000000021820d30761fa8d67a3c7503c" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">No Stress</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f000000025af1070c80cd50dbbb4cfa19" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Happy Hits!</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f00000002e2c938563967c4f22c76ed74" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Young, Wild & Free</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f00000002f5e3bf0413ec122f118e5f08" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Life Sucks</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs">
+              <div id="newreleases" class="d-none">
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">From your favorite artists</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273d06b152b24e9357e81c460fe" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Only Wanna Be With You</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2731f0fd0835e055d96b82ccaf0" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">L.W.</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2735a0fe641b169cd83c1843984" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Vibe Check</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27317ec0d37ecc6e529b3e21c00" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">ZAZA</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c69570bb7d4e21974c3e9253" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Ghost Shaped People</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27319caf82401a5cf814445238c" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Camarones y Viniles</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">New Releases</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://newjams-images.scdn.co/v3/release-radar/93fec27f9aac86526b9010e882037afbda4e3d5f/en/default" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Release Radar</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27304db0e3bcd166c1d6cfd81f9" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">POWER UP</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273b736b9be2870fc3492954b40" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">QCVC9 - QUELLO CHE VI CONSIGLIO VOL.9</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27305a3c11cb2cb7c60d30316a3" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Song Machine Vol.1</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs">
+              <div id="discover" class="d-none">
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">Recommendations for you</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27347230731a2b8849d79284aae" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">One Big Beautiful Sound</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b27317dd812df38fed44d6d2036e" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Van Halen</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273c9adfbd773852e286faed040" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Are You Experienced</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2739e1cfc756886ac782e363d79" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Currents</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2737ce28ff427f9432906c07f0d" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Bossa Nova</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2734c27d14a19e67dac23661031" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Portamento</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4 mx-5">
+                    <div class="col col-12 ml-5">
+                        <h2 class="font-weight-bold">Because you like Queen</h2>
+                        <div class="row my-4 d-flex justify-content-start">
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f0000000338c33894b80da5646d4a929f" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Led Zeppelin</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f0000000336834b90af842ac737f7dac3" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Rush</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f000000037d0577e4b1b8e8ec9e82019a" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">David Bowie</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mr-3 mt-1" style="border: 0px;">
+                                <img src="https://i.scdn.co/image/ab67706f000000033dea752edffb0f7facbd4867" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card-body">
+                                <p class="card-text text-center">Guns N' Roses</p>
+                                </div>
+                                <div class="container-fluid d-flex justify-content-between align-items-center icons">
+                                  <i class="far fa-heart"></i>
+                                  <i class="fas fa-play-circle fa-2x"></i>
+                                  <div class="dropdown">
+                                    <button class="btn m-0 p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                      <i class="fas fa-ellipsis-h"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Go to Playlist Radio</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Report</a>
+                                      <a class="dropdown-item" href="#">Save to your library</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Create Similar Playlist</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#">Share</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -321,5 +1438,30 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.getElementById("trending-btn").addEventListener("click", showT = function () {
+        document.getElementById("trending").classList.toggle("d-block");
+        document.getElementById("trending-btn").classList.toggle("active");
+      });
+      document.getElementById("pod-btn").addEventListener("click", showP = function () {
+        document.getElementById("podcast").classList.toggle("d-block");
+        document.getElementById("pod-btn").classList.toggle("active");
+      });
+      document.getElementById("mood-btn").addEventListener("click", showM = function () {
+        document.getElementById("moods").classList.toggle("d-block");
+        document.getElementById("mood-btn").classList.toggle("active");
+      });
+      document.getElementById("new-btn").addEventListener("click", showR = function () {
+        document.getElementById("newreleases").classList.toggle("d-block");
+        document.getElementById("new-btn").classList.toggle("active");
+      });
+      document.getElementById("discover-btn").addEventListener("click", showD = function () {
+        document.getElementById("discover").classList.toggle("d-block");
+        document.getElementById("discover-btn").classList.toggle("active");
+      });
+
+      window.onload=showT();
+
+    </script>
   </body>
 </html>
