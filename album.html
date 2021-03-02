@@ -23,45 +23,60 @@
     <title>Album</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid vh-100">
       <div class="row">
         <div class="col col-2 p-3 pl-4" id="sidebar">
-          <div class="d-flex flex-column justify-content-between h-100">
-            <div class="top-sidebar-links flex-grow-1">
-              <div id="spotify-logo-container">
-                <img src="/assets/Spotify.svg" alt="" />
+          <div class="d-flex flex-column nav-items">
+            <div class="top-sidebar-links d-flex align-items-center align-items-lg-start flex-column">
+              <div>
+                <img class="d-none d-lg-block" id="desktop-logo" src="/assets/Spotify.svg" alt="" />
+                <img class="d-block d-lg-none mb-2" id="mobile-logo" src="/assets/spotify-seeklogo.com.svg" alt="" />
               </div>
-              <div class="link-container pl-1 d-flex justify-content-start align-items-end my-3">
-                <img class="mr-3" src="/assets/home.svg" alt="" />
-                <span class="sidebar-links font-weight-bold">Home</span>
-              </div>
-              <div class="link-container pl-1 d-flex justify-content-start align-items-end my-3">
-                <img class="mr-3" src="/assets/sea.svg" alt="" />
-                <span class="sidebar-links font-weight-bold">Search</span>
-              </div>
-              <div class="link-container pl-1 d-flex justify-content-start align-items-end my-3">
-                <img class="mr-3" src="/assets/library.svg" alt="" />
-                <span class="sidebar-links font-weight-bold">Your library</span>
-              </div>
+              <a href="" class="text-decoration-none"
+                ><div class="link-container pl-1 d-flex justify-content-start align-items-end my-2">
+                  <img class="mr-0 mr-lg-3 p-0" src="/assets/home.svg" alt="" />
+                  <span class="sidebar-links font-weight-bold d-none d-lg-block">Home</span>
+                </div></a
+              >
+              <a href="" class="text-decoration-none"
+                ><div class="link-container pl-1 d-flex justify-content-start align-items-end my-2">
+                  <img class="mr-0 mr-lg-3 p-0" src="/assets/sea.svg" alt="" />
+                  <span class="sidebar-links font-weight-bold d-none d-lg-block">Search</span>
+                </div></a
+              >
+              <a href="" class="text-decoration-none"
+                ><div class="link-container pl-1 d-flex justify-content-start align-items-end my-2">
+                  <img class="mr-0 mr-lg-3 p-0" src="/assets/library.svg" alt="" />
+                  <span class="sidebar-links font-weight-bold d-none d-lg-block">Your library</span>
+                </div>
+              </a>
             </div>
-            <div class="bottom-sidebar-links">
-              <div class="link-container pl-1 d-flex justify-content-start align-items-end">
-                <img class="mr-3" src="/assets/download.svg" alt="" />
-                <span class="sidebar-links font-weight-bold">Install App</span>
-              </div>
-              <hr />
-              <div class="link-container pl-1 d-flex justify-content-start align-items-end">
-                <img id="user-img" class="mr-3" src="/assets/user.svg" alt="" />
-                <span class="sidebar-links font-weight-bold text-white">Spotify user</span>
-              </div>
+
+            <div class="bottom-sidebar-links d-flex align-items-center align-items-lg-start flex-column">
+              <a href="" class="text-decoration-none"
+                ><div class="link-container pl-1 d-flex justify-content-start align-items-end">
+                  <img class="mr-0 mr-lg-3 p-0" src="/assets/download.svg" alt="" />
+                  <span class="sidebar-links font-weight-bold d-none d-lg-block">Install App</span>
+                </div></a
+              >
+              <hr class="my-3 mx-0" />
+              <a href="" class="text-decoration-none"
+                ><div class="link-container pl-1 d-flex justify-content-start align-items-end">
+                  <img id="user-img" class="mr-0 mr-0 mr-lg-3 p-0" src="/assets/user.svg" alt="" />
+                  <span class="sidebar-links font-weight-bold text-white d-none d-lg-block">Spotify user</span>
+                </div></a
+              >
             </div>
           </div>
         </div>
-        <div class="col col-10 bg-secondary" id="main">
+        <div class="col col-10" id="main">
           <div class="row">
-            <div class="col col-4" id="album-column">
-              <div class="d-flex flex-column text-center" id="album-info">
-                <img class="d-block" src="assets/queen_album_cover.jpg" alt="" />
+            <div class="col col-12 col-lg-4" id="album-column">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center text-center pl-lg-5"
+                id="album-info"
+              >
+                <img class="img-fluid" src="assets/queen_album_cover.jpg" alt="" />
                 <h3 class="text-white font-weight-bold my-2">Queen II (Deluxe Edition 2011 Remaster)</h3>
                 <p class="artist-name">Queen</p>
                 <div class="px-1">
@@ -76,215 +91,263 @@
                 </div>
               </div>
             </div>
-            <div class="col col-8 bg-dark" id="songs-column">
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">1</p>
+            <div class="col col-12 col-lg-8" id="songs-column">
+              <div id="album-wrapper">
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">1</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">Procession - Remastered 2011</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
                   </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Procession - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
-                  </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
                   </div>
                 </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">2</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
                   </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
-                  </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
                   </div>
                 </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">3</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">White Queen (As It Began)</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
                   </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
-                  </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
                   </div>
                 </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">4</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">Some Day One Day</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
                   </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
-                  </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
                   </div>
                 </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">5</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">The Loser In The End</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
                   </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
-                  </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
                   </div>
                 </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">6</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">Ogre Battle</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
                   </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
-                  </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
                   </div>
                 </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">7</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">The Fairy Feller's Master-Stroke</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
                   </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
-                  </div>
-                </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
-                  </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
                   </div>
                 </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
-                </div>
-              </div>
-              <div class="song-container text-white d-flex justify-content-between align-items-center px-5 my-2">
-                <div class="left d-flex justify-content-between align-items-center">
-                  <div class="song-id-wrapper">
-                    <p class="pt-2 song-id">10</p>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">8</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">Nevermore</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
                   </div>
-                  <div class="song-info pl-4">
-                    <p class="song-name m-0 font-weight-bold">Father To Son - Remastered 2011</p>
-                    <p class="artist-name m-0 font-weight-bold">Queen</p>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
                   </div>
                 </div>
-                <div class="right">
-                  <p class="song-duration pt-3">1:13</p>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">9</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">The March Of The Black Queen</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
+                  </div>
+                </div>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">10</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">Funny How Love Is</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
+                  </div>
+                </div>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">11</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">Seven Seas Of Rhye</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
+                  </div>
+                </div>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">12</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">See What A Fool I've Been</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
+                  </div>
+                </div>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">13</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">White Queen (As It Began)</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
+                  </div>
+                </div>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">14</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">Seven Seas Of Rhye</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
+                  </div>
+                </div>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">15</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">Nevermore</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
+                  </div>
+                </div>
+                <div
+                  class="song-container text-white d-flex justify-content-between align-items-center px-lg-5 px-2 my-2"
+                >
+                  <div class="left d-flex justify-content-between align-items-center">
+                    <div class="song-id-wrapper">
+                      <p class="pt-2 song-id">16</p>
+                    </div>
+                    <div class="song-info pl-4">
+                      <p class="song-name m-0 font-weight-bold">See What A Fool I’ve Been</p>
+                      <p class="artist-name m-0 font-weight-bold">Queen</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <p class="song-duration pt-3">1:13</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -292,37 +355,43 @@
         </div>
       </div>
       <div class="row">
-        <div id="player" class="col col-12 d-flex justify-content-between align-items-center bg-dark">
+        <div id="player" class="col col-12 d-flex justify-content-between align-items-center">
           <div id="player-info" class="p-3 d-flex text-white align-items-center">
             <img src="/assets/queen_album_cover.jpg" alt="" />
             <div class="d-flex flex-column ml-3">
-              <p class="m-0">Procession - Remastered 2011</p>
-              <p class="m-0 artist-name">Queen</p>
+              <p class="m-0" id="player-song-name">Procession - Remastered 2011</p>
+              <p class="m-0 artist-name" id="player-artist-name">Queen</p>
             </div>
           </div>
-          <div id="player-controls-mid" class="d-flex flex-column justify-content-center bg-align-items-center">
+          <div id="player-controls-mid" class="d-flex flex-column justify-content-center align-items-center">
             <div class="player-buttons d-flex justify-content-center align-items-center mb-3">
-              <img src="/assets/shuffle.svg" alt="" />
+              <img class="d-none d-lg-block" src="/assets/shuffle.svg" alt="" />
               <img src="/assets/previous_track.svg" alt="" />
-              <img src="/assets/playbutton.svg" alt="" />
+              <img id="play-button" class="p-2" src="/assets/playbutton.svg" alt="" />
               <img src="/assets/next_track.svg" alt="" />
-              <img src="/assets/repeat.svg" alt="" />
+              <img class="d-none d-lg-block" src="/assets/repeat.svg" alt="" />
             </div>
             <div id="seek-bar">
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="0"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
             </div>
           </div>
-          <div id="volume-controls" class="p-3 d-flex justify-content-center align-items-center">
+          <div id="volume-controls" class="p-3 d-none d-lg-flex justify-content-center align-items-center">
             <img class="mx-2" src="/assets/volume.svg" alt="" />
-            <div class="volume-bar"></div>
+            <div class="volume-bar">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
           </div>
         </div>
       </div>
