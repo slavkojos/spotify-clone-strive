@@ -15,9 +15,6 @@ body {
 #sidebar {
   background-color: black;
 }
-.top-sidebar-links {
-  margin-bottom: 500px;
-}
 
 #desktop-logo {
   width: 130px;
@@ -90,6 +87,7 @@ hr {
   content: url(assets/playbutton.svg);
   cursor: pointer;
   transform: scale(0.7);
+  padding-right: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -153,6 +151,7 @@ hr {
   border-radius: 20px;
 }
 
+/* ---------------------PLAYER ENDS HERE------------------------------------ */
 @media only screen and (max-width: 768px) {
   #player-song-name,
   #player-artist-name {
