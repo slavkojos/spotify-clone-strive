@@ -57,6 +57,9 @@ div ul li a {
 
 div ul li a:hover {
   color: #fff;
+}
+
+.tab-border {
   border-bottom: 2px solid #1ed760;
 }
 
@@ -124,4 +127,40 @@ div.row div.col-lg-2 {
 
 div.card-body {
   padding: 0.8rem;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+  background: #151516;
+  color: #fff;
+  font-size: 14px;
+}
+
+.show {
+  display: block !important;
+}
+
+#tab-3-content {
+  line-height: 1.5rem;
+  padding: 0 20px;
+  color: #ccc;
+}
+
+.daire {
+  background-color: rgb(0, 129, 255);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute !important;
+  padding: 12px;
+  color: #fff;
+  max-width: 48px;
+  max-height: 48px;
+  text-align: center;
+  top: 0;
+  right: 0;
+  top: 12px;
+  right: 35px;
+  font-weight: 700;
 }
