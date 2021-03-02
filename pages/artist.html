@@ -23,7 +23,109 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2" style="background-color: black; height: 100vh"></div>
+        <div class="col col-2 p-3 pl-4" id="sidebar">
+          <div
+            class="d-flex flex-column justify-content-between nav-items h-100"
+          >
+            <div
+              class="top-sidebar-links d-flex align-items-center align-items-lg-start flex-column"
+            >
+              <div>
+                <img
+                  class="d-none d-lg-block"
+                  id="desktop-logo"
+                  src="./assets-helper/Spotify.svg"
+                  alt=""
+                />
+                <img
+                  class="d-block d-lg-none mb-2"
+                  id="mobile-logo"
+                  src="./assets-helper/spotify-seeklogo.com.svg"
+                  alt=""
+                />
+              </div>
+              <a href="" class="text-decoration-none"
+                ><div
+                  class="link-container pl-1 d-flex justify-content-start align-items-end my-2"
+                >
+                  <img
+                    class="mr-0 mr-lg-3 p-0"
+                    src="./assets-helper/home.svg"
+                    alt=""
+                  />
+                  <span class="sidebar-links font-weight-bold d-none d-lg-block"
+                    >Home</span
+                  >
+                </div></a
+              >
+              <a href="" class="text-decoration-none"
+                ><div
+                  class="link-container pl-1 d-flex justify-content-start align-items-end my-2"
+                >
+                  <img
+                    class="mr-0 mr-lg-3 p-0"
+                    src="./assets-helper/sea.svg"
+                    alt=""
+                  />
+                  <span class="sidebar-links font-weight-bold d-none d-lg-block"
+                    >Search</span
+                  >
+                </div></a
+              >
+              <a href="" class="text-decoration-none"
+                ><div
+                  class="link-container pl-1 d-flex justify-content-start align-items-end my-2"
+                >
+                  <img
+                    class="mr-0 mr-lg-3 p-0"
+                    src="./assets-helper/library.svg"
+                    alt=""
+                  />
+                  <span class="sidebar-links font-weight-bold d-none d-lg-block"
+                    >Your library</span
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="bottom-sidebar-links d-flex align-items-center align-items-lg-start flex-column pb-5 mb-5"
+            >
+              <a href="" class="text-decoration-none"
+                ><div
+                  class="link-container pl-1 d-flex justify-content-start align-items-end"
+                >
+                  <img
+                    class="mr-0 mr-lg-3 p-0"
+                    src="./assets-helper/download.svg"
+                    alt=""
+                  />
+                  <span class="sidebar-links font-weight-bold d-none d-lg-block"
+                    >Install App</span
+                  >
+                </div></a
+              >
+              <hr class="my-3 mx-0" />
+              <a href="" class="text-decoration-none"
+                ><div
+                  class="link-container pl-1 d-flex justify-content-start align-items-end"
+                >
+                  <img
+                    id="user-img"
+                    class="mr-0 mr-0 mr-lg-3 p-0"
+                    src="./assets-helper/user.svg"
+                    alt=""
+                  />
+                  <span
+                    class="sidebar-links font-weight-bold text-white d-none d-lg-block"
+                    >Spotify user</span
+                  >
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+
         <div class="col-10">
           <section class="bg-img">
             <div class="text-center mx-auto pt-3">
@@ -319,8 +421,57 @@
         <!-- ./col-10-end-->
       </div>
       <!-- ./row-end-->
+     
+     <div class="row">
+      <div id="player" class="col col-12 d-flex justify-content-between align-items-center">
+        <div id="player-info" class="p-3 d-flex text-white align-items-center">
+          <img src="/assets/queen_album_cover.jpg" alt="" />
+          <div class="d-flex flex-column ml-3">
+            <p class="m-0" id="player-song-name">Procession - Remastered 2011</p>
+            <p class="m-0 artist-name" id="player-artist-name">Queen</p>
+          </div>
+        </div>
+        <div id="player-controls-mid" class="d-flex flex-column justify-content-center align-items-center">
+          <div class="player-buttons d-flex justify-content-center align-items-center mb-3">
+            <img class="d-none d-lg-block" src="/assets/shuffle.svg" alt="" />
+            <img src="/assets/previous_track.svg" alt="" />
+            <img id="play-button" class="p-2" src="/assets/playbutton.svg" alt="" />
+            <img src="/assets/next_track.svg" alt="" />
+            <img class="d-none d-lg-block" src="/assets/repeat.svg" alt="" />
+          </div>
+          <div id="seek-bar">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="0"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+        <div id="volume-controls" class="p-3 d-none d-lg-flex justify-content-center align-items-center">
+          <img class="mx-2" src="/assets/volume.svg" alt="" />
+          <div class="volume-bar">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="0"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+     </div>
+
+
+
     </div>
     <!-- ./container-fluid-end-->
+
+   
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
