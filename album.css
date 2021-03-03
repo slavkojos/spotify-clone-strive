@@ -1,6 +1,7 @@
 body {
   font-family: Circular-book;
   background-color: black;
+  overflow: hidden;
 }
 @font-face {
   font-family: Circular-bold;
@@ -12,8 +13,12 @@ body {
 }
 /* -------------------------------------------------------SIDEBAR */
 
-#sidebar {
+.nav-items {
   background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
 #desktop-logo {
@@ -57,7 +62,7 @@ hr {
   margin-top: 50px;
 }
 
-#album-info img {
+#album-cover {
   width: 300px;
   height: 300px;
 }
@@ -73,7 +78,7 @@ hr {
 }
 
 #album-wrapper {
-  height: 900px;
+  height: 80%;
   overflow: auto;
 }
 
@@ -82,12 +87,16 @@ hr {
   background-color: rgba(71, 71, 71, 0.349);
   border-radius: 5px;
 }
+#sidebar a:hover {
+  filter: brightness(200%);
+}
 
 .song-container:hover .song-id {
   content: url(assets/playbutton.svg);
   cursor: pointer;
   transform: scale(0.7);
-  padding-right: 10px;
+  position: relative;
+  right: 8px;
 }
 
 ::-webkit-scrollbar {
@@ -133,6 +142,12 @@ hr {
   height: 30px;
   width: 30px;
 }
+#play-button:hover {
+  transform: scale(1.1);
+}
+.player-buttons img:hover {
+  filter: brightness(200%);
+}
 #seek-bar {
   height: 3px;
   width: 80%;
@@ -152,9 +167,33 @@ hr {
 }
 
 /* ---------------------PLAYER ENDS HERE------------------------------------ */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+  #album-wrapper {
+    height: 30%;
+    overflow: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
   #player-song-name,
   #player-artist-name {
     font-size: 12px;
+  }
+  #album-cover {
+    height: 200px;
+    width: 200px;
+  }
+  #album-wrapper {
+    height: 20%;
+    overflow: auto;
+  }
+  #album-info {
+    margin-top: 10px;
+  }
+  #album-info h3 {
+    font-size: 18px;
+  }
+  #album-actions img {
+    width: 20px;
+    height: 20px;
   }
 }
