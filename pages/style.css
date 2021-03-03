@@ -37,9 +37,14 @@ h3 {
   color: #fff;
 }
 
+div.ust-taraf {
+  display: none;
+}
+
 p.small-size {
   font-size: 80%;
   color: rgb(204 204 204 / 70%);
+  padding-top: 1.8rem;
 }
 
 .bg-img {
@@ -146,6 +151,7 @@ div.card-body {
   line-height: 1.5rem;
   padding: 0 20px;
   color: #ccc;
+  min-height: 700px;
 }
 
 .daire {
@@ -260,4 +266,179 @@ div.bunlar p {
 
 div.hadi {
   background-color: rgb(68, 69, 68);
+  position: relative;
+}
+
+img.my-play {
+  position: absolute;
+  background-color: #1ed760;
+  border-radius: 50%;
+  padding: 10px 10px;
+  top: -57px;
+  right: 6px;
+  height: 40px;
+  width: 40px;
+}
+
+div.yeni-ler {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  section {
+    height: 300px;
+  }
+
+  #player {
+    max-height: 65px;
+  }
+
+  .col-10 {
+    min-width: 100%;
+  }
+
+  .bg-img {
+    background: url(./assets-helper/about14.jfif) no-repeat center center/cover;
+    box-shadow: inset 100px 100px 200px rgba(0, 0, 0, 0.5),
+      inset -100px -100px 200px rgba(0, 0, 0, 0.5);
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  div.buttons.pt-2 {
+    display: none;
+  }
+
+  a.tab-item {
+    display: none;
+  }
+
+  div.ust-taraf {
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+    font-size: 20px;
+    padding-top: 10px;
+    align-items: center;
+  }
+
+  div.ust-taraf div.sag-taraf {
+    display: flex;
+    padding-right: 10px;
+  }
+
+  div.ust-taraf div.sol-taraf {
+    padding-bottom: 5px;
+  }
+
+  .follow-button {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    border: 0px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    max-height: 28px;
+  }
+
+  .uc-nokta {
+    transform: rotate(90deg);
+    height: 28px;
+    color: white;
+    letter-spacing: 2.3px;
+  }
+
+  p.yandik {
+    transform: rotate(90deg);
+  }
+
+  .ok-left {
+    color: white;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    height: 35px;
+    width: 35px;
+    font-weight: bold;
+  }
+
+  .ikinci {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .ikinci h1 {
+    padding-top: 20px;
+    font-weight: 500;
+    color: white;
+    padding-top: 70px;
+  }
+
+  div.hepsi {
+    display: none;
+  }
+
+  div.yeni-ler {
+    background-color: rgb(21, 21, 22);
+    display: block;
+    min-height: 460px;
+    position: relative;
+  }
+
+  div.yeni-ler h3 {
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  div.yeni-ler button {
+    color: white;
+    background-color: #1ed760;
+    border: 0px solid #1ed760;
+    border-radius: 24px;
+    padding: 15px 50px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  div.sarkilar {
+    padding-top: 20px;
+    color: white;
+    background-color: transparent;
+    align-items: center;
+  }
+
+  div.sarkilar img {
+    min-height: 50px;
+    min-width: 50px;
+  }
+
+  p.yandik {
+    transform: rotate(90deg);
+    padding-left: 10px;
+    font-size: 20px;
+    color: #ccc;
+  }
+
+  div.sarkilar div.col-6 p {
+    margin-bottom: 0;
+  }
+
+  div.sarkilar small {
+    color: #ccc;
+  }
+
+  h3.popular {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .show {
+    display: none !important;
+  }
 }
