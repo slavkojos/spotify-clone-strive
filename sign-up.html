@@ -53,32 +53,34 @@
       <h2 class="sign-up-email pb-1">Sign up with your email address</h2>
 
             <!-- Form -->
-        <form> 
+        <form class="needs-validation " novalidate> 
           <div class="row pb-4">
-            <div class="col-sm-12">
-              <label for="login-username" >What's your email?</label>
-              <input type="text" class="form-control" id="email" placeholder="Enter your email.">
-              <small></small>
+            <div class="col-sm-12 ">
+              <label for="email" >What's your email?</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email." aria-describedby="emailHelp" required>
+              <div class="invalid-feedback">Invalid email.</div>
             </div>
-            
+
           </div>
           <div class="row pb-4">
             <div class="col-sm-12">
-              <label for="login-username" >Confirm your email</label>
-              <input type="text" class="form-control" id="confirm-email" placeholder="Enter your email again." >
-              
+              <label for="confirm-email" >Confirm your email</label>
+              <input type="email" class="form-control" id="confirm-email" placeholder="Enter your email again." required >
+              <div class="invalid-feedback">Invalid email.</div>
             </div>
           </div>
           <div class="row pb-4">
             <div class="col-sm-12">
-              <label for="login-username" >Create a password</label>
-              <input type="text" class="form-control" id="password" placeholder="Create a password.">
+              <label for="password" >Create a password</label>
+              <input type="password" class="form-control" id="password" placeholder="Create a password." required>
+              <div class="invalid-feedback">You need to enter your password.</div>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12">
-              <label for="login-username" >What should we call you?</label>
-              <input type="text" class="form-control" id="nickname" placeholder="Enter a profile name." >
+              <label for="nickname" >What should we call you?</label>
+              <input type="text" class="form-control" id="nickname" placeholder="Enter a profile name." required >
+              <div class="invalid-feedback">You need to enter your nickname.</div>
             </div>
           </div>
           <h6 class="pb-4 m-0 mt-2">This appears on your profile.</h6>
@@ -88,11 +90,12 @@
                <span class="date-birth"> What's your date of birth? </span>
             </div>
                 <div class="col-sm-3">Day
-                    <input type="number" class="form-control non-arrows" id="day" placeholder="DD">
-                </div>
+                    <input type="number" class="form-control non-arrows" id="day" placeholder="DD" required>
+                    <div class="invalid-feedback"></div>
+                  </div>
                 <div class="col-sm-6">
                     <h6 class="mb-1">Month</h6>
-                    <select name="months" required="" class="name-of-month form-control" id="months">
+                    <select name="months" required="" class="name-of-month form-control" id="months" required>
                         <option selected="" disabled="" value="">Month</option>
                         <option value="01">January</option>
                         <option value="02">February</option>
@@ -109,7 +112,8 @@
                     </select>
                 </div>
                 <div class="col-sm-3">Year
-                    <input type="year" class="form-control" id="year" placeholder="YYYY">
+                    <input type="year" class="form-control" id="year" placeholder="YYYY" required>
+                    <div class="invalid-feedback"></div>
                 </div>
             </div>
           </div>
@@ -191,75 +195,62 @@
                          item.checked = false;  
                  });  
              }
-                let form = document.querySelector("#form")
-                let email = document.querySelector("#email").value
-                let confirmEmail = document.querySelector("#confirm-email").value
-                let password = document.querySelector("#password").value
-                let nickName = document.querySelector("#nickname").value
-                let day = document.querySelector("#day").value
-                let month = document.querySelector("#month")
-                let year = document.querySelector("#year").value
-                
-
-                form.addEventListener("submit", (e) => {
-                    e.preventDefault()
-
-                    checkInputs()
-                })
-
-                function checkInputs(){
-                    //get the values from the inputs
-                    let emailValue = email
-                    console.log(emailValue)
-                    let confirmEmailValue = confirmEmail
-                    let passwordValue = password
-                    let nickNameValue = nickName
-                    let dayValue = day
-                    let monthValue = month
-                    let yearValue = year
-
-                    if(emailValue ===""){
-                        setErrorFor(email, "You need to enter your email.")
-                    } else{
-                        setSuccessFor(email)
-                    }
-                }
-                function setErrorFor(input, message){
-                     let formControl = input.parentElement
-                     let small = document.querySelector("small") 
-                }
-
-
-
-
-
-
-                /*
-                let validation = document.getElementsByClassName("form-control")
-                
-                let warning = (event) => {
-                event.currentTarget.style.border="1px red solid"
-                };
-                let correct = (event) =>{
-                    event.currentTarget.style.border ="1px grey solid"
-                }
-
-                for (let i = 0; i < validation.length; i++) {
-                validation[i].addEventListener("click", correct);
-              }*/
- 
-              </script>
+      </script>
                
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+    
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          ("use strict");
+          window.addEventListener(
+            "load",
+            function () {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName("needs-validation");
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(
+                forms,
+                function (form) {
+                  form.addEventListener(
+                    "submit",
+                    function (event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add("was-validated");
+                    },
+                    false
+                  );
+                }
+              );
+            },
+            false
+          );
+        })();
+      </script>
+       <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          $(".needs-validation")
+            .find("input,select,textarea")
+            .on("focusout", function () {
+              // check element validity and change class
+              $(this)
+                .removeClass("is-valid is-invalid")
+                .addClass(this.checkValidity() ? "" : "is-invalid");
+            });
+        })();
+      </script>
+    
   </body>
 </html>

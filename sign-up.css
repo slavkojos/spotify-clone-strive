@@ -268,3 +268,7 @@ span a:hover{
     margin-top: 8px;
     color: rgb(226, 33, 52);
 }
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    height: 50px;
+
+}
