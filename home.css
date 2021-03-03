@@ -43,11 +43,15 @@ span{
 }
 
 .fa-play-circle {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .fa-play-circle:hover {
-    transform: scale(1.8);
+    transform: scale(1.5);
+}
+
+.fa-heart, .fa-ellipsis-h {
+    transform: scale(1.2);
 }
 
 .dropdown-menu {
