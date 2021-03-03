@@ -12,11 +12,13 @@
 
 .card {
     width: 150px;
+    height: 180px;
     background-color: inherit;   
 }
 
 span{
     font-size: 10px;
+    cursor: pointer;
 }
 
 .active {

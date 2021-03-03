@@ -64,12 +64,12 @@
       </div>
         <div class="container col-10">
             <div class="row my-4">
-                <div class="col col-4 mx-auto d-flex flex-row justify-content-between">
-                    <span id="trending-btn">TRENDING</span>
-                    <span id="pod-btn">PODCAST</span>
-                    <span id="mood-btn">MOODS AND GENRES</span>
-                    <span id="new-btn">NEW RELEASES</span>
-                    <span id="discover-btn">DISCOVER</span>
+                <div class="col col-lg-5 col-md-6 col-sm-10 mx-auto d-flex justify-content-between">
+                    <span id="trending-btn" class="button">TRENDING</span>
+                    <span id="pod-btn" class="button">PODCAST</span>
+                    <span id="mood-btn" class="button">MOODS AND GENRES</span>
+                    <span id="new-btn" class="button">NEW RELEASES</span>
+                    <span id="discover-btn" class="button">DISCOVER</span>
                 </div>
             </div>
             <div class="tabs">
@@ -1131,7 +1131,7 @@
                                 <img src="https://i.scdn.co/image/ab67616d0000b273b736b9be2870fc3492954b40" class="card-img-top" alt="...">
                                 <div class="overlay"></div>
                                 <div class="card-body">
-                                <p class="card-text text-center">QCVC9 - QUELLO CHE VI CONSIGLIO VOL.9</p>
+                                <p class="card-text text-center">QCVC9</p>
                                 </div>
                                 <div class="container-fluid d-flex justify-content-between align-items-center icons">
                                   <i class="far fa-heart"></i>
@@ -1519,24 +1519,87 @@
     ></script>
     <script>
       document.getElementById("trending-btn").addEventListener("click", showT = function () {
-        document.getElementById("trending").classList.toggle("d-block");
-        document.getElementById("trending-btn").classList.toggle("active");
+        let X = document.querySelectorAll(".tabs .d-none")
+        let Z = document.querySelectorAll(".button")
+        for(let j = 0; j < Z.length; j++) {
+          Z[j].classList.remove("active")
+        }
+        for(let i = 0; i < X.length;i++) {
+          X[i].classList.remove("d-block")
+          console.log(X[i].classList)
+          if (i===0){
+            X[0].classList.toggle("d-block")
+            document.getElementById("trending-btn").classList.add("active");
+          }
+        }
       });
+      
+      
       document.getElementById("pod-btn").addEventListener("click", showP = function () {
-        document.getElementById("podcast").classList.toggle("d-block");
-        document.getElementById("pod-btn").classList.toggle("active");
+        let X = document.querySelectorAll(".tabs .d-none")
+        let Z = document.querySelectorAll(".button")
+        for(let j = 0; j < Z.length; j++) {
+          Z[j].classList.remove("active")
+        }
+        for(let i = 0; i < X.length;i++) {
+          X[i].classList.remove("d-block")
+          console.log(X[i].classList)
+          if (i===1){
+            X[1].classList.toggle("d-block")
+            document.getElementById("pod-btn").classList.add("active");
+          }
+        }
       });
+
+
       document.getElementById("mood-btn").addEventListener("click", showM = function () {
-        document.getElementById("moods").classList.toggle("d-block");
-        document.getElementById("mood-btn").classList.toggle("active");
+        let X = document.querySelectorAll(".tabs .d-none")
+        let Z = document.querySelectorAll(".button")
+        for(let j = 0; j < Z.length; j++) {
+          Z[j].classList.remove("active")
+        }
+        for(let i = 0; i < X.length;i++) {
+          X[i].classList.remove("d-block")
+          console.log(X[i].classList)
+          if (i===2){
+            X[2].classList.toggle("d-block")
+            document.getElementById("mood-btn").classList.add("active");
+          }
+        }
       });
+      
+      
       document.getElementById("new-btn").addEventListener("click", showR = function () {
-        document.getElementById("newreleases").classList.toggle("d-block");
-        document.getElementById("new-btn").classList.toggle("active");
+        let X = document.querySelectorAll(".tabs .d-none")
+        let Z = document.querySelectorAll(".button")
+        for(let j = 0; j < Z.length; j++) {
+          Z[j].classList.remove("active")
+        }
+        for(let i = 0; i < X.length;i++) {
+          X[i].classList.remove("d-block")
+          console.log(X[i].classList)
+          if (i===3){
+            X[3].classList.toggle("d-block")
+            document.getElementById("new-btn").classList.add("active");
+          }
+        }
       });
+      
+      
       document.getElementById("discover-btn").addEventListener("click", showD = function () {
-        document.getElementById("discover").classList.toggle("d-block");
-        document.getElementById("discover-btn").classList.toggle("active");
+        let X = document.querySelectorAll(".tabs .d-none")
+        let Z = document.querySelectorAll(".button")
+        for(let j = 0; j < Z.length; j++) {
+          Z[j].classList.remove("active")
+        }
+        for(let i = 0; i < X.length;i++) {
+          X[i].classList.remove("d-block")
+          console.log(X[i].classList)
+          if (i===4){
+            X[4].classList.toggle("d-block")
+            document.getElementById("discover-btn").classList.add("active");
+          }
+        }
       });
 
       window.onload=showT();
