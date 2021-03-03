@@ -67,6 +67,14 @@ span{
     background-color: #404040 !important;
 }
 
+.nav-items {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
 #sidebar {
     background-color: black;
 }
