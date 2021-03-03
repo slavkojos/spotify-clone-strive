@@ -53,29 +53,32 @@
       <h2 class="sign-up-email pb-1">Sign up with your email address</h2>
 
             <!-- Form -->
-        <form>
+        <form> 
           <div class="row pb-4">
             <div class="col-sm-12">
               <label for="login-username" >What's your email?</label>
-              <input type="text" class="form-control" placeholder="Enter your email.">
+              <input type="text" class="form-control" id="email" placeholder="Enter your email.">
+              <small></small>
             </div>
+            
           </div>
           <div class="row pb-4">
             <div class="col-sm-12">
               <label for="login-username" >Confirm your email</label>
-              <input type="text" class="form-control" placeholder="Enter your email again.">
+              <input type="text" class="form-control" id="confirm-email" placeholder="Enter your email again." >
+              
             </div>
           </div>
           <div class="row pb-4">
             <div class="col-sm-12">
               <label for="login-username" >Create a password</label>
-              <input type="text" class="form-control" placeholder="Create a password.">
+              <input type="text" class="form-control" id="password" placeholder="Create a password.">
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12">
               <label for="login-username" >What should we call you?</label>
-              <input type="text" class="form-control" placeholder="Enter a profile name.">
+              <input type="text" class="form-control" id="nickname" placeholder="Enter a profile name." >
             </div>
           </div>
           <h6 class="pb-4 m-0 mt-2">This appears on your profile.</h6>
@@ -85,18 +88,28 @@
                <span class="date-birth"> What's your date of birth? </span>
             </div>
                 <div class="col-sm-3">Day
-                    <input type="number" class="form-control" placeholder="DD">
+                    <input type="number" class="form-control non-arrows" id="day" placeholder="DD">
                 </div>
                 <div class="col-sm-6">
                     <h6 class="mb-1">Month</h6>
-                    <div class="icon-small"><a href="#"></a></div>
-                    <input type="month" class="form-control">
-                    <label class="mb-0" for="month">
-                    </label>
-                    
+                    <select name="months" required="" class="name-of-month form-control" id="months">
+                        <option selected="" disabled="" value="">Month</option>
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
                 </div>
                 <div class="col-sm-3">Year
-                    <input type="year" class="form-control" placeholder="YYYY">
+                    <input type="year" class="form-control" id="year" placeholder="YYYY">
                 </div>
             </div>
           </div>
@@ -135,14 +148,14 @@
       <!-- Last part -->
       <div class="row">
           <div class="col-sm-12">
-              <div>
+              <div class="accept-condition">
                   <span>By clicking on Sign up, you agree to Spotify's <a href="https://www.spotify.com/ie/legal/end-user-agreement/" target="_blank"> Terms and Conditions of Use</a>.</span>
               </div>
           </div>
         </div>
       <div class="row">
         <div class="col-sm-12">
-            <div>
+            <div  class="policy-privacy">
                 <span>To learn more about how Spotify collects, uses, shares and protects your personal data please read Spotify's <a href="/ie/legal/privacy-policy/" target="_blank">Privacy Policy</a>.</span>
             </div>
         </div>
@@ -150,21 +163,19 @@
             <div class="row">
               <div class="col-sm-12">
                 <div>
-                  <form action="https://www.spotify.com/ie/signup/?forward_url=https%3A%2F%2Fwww.spotify.com%2Fie%2Fpurchase%2Foffer%2Fdefault-trial-1m%2F%3Fcountry%3DIE" target="_blank">
-                  <button class="sign-up button">Sign up</button>
+                  <form id="form" action="" target="_blank">
+                  <button type="submit" class="sign-up button">Sign up</button>
                 </form>
                 </div>
               </div>
             </div>
         <div class="row">
             <div class="col-sm-12">
-                <div>
-                    <span>Have an account?<a href="/ie/legal/privacy-policy/" target="_blank">Log in</a>.</span>
+                <div class="login-again">
+                    <span>Have an account?<a href="/ie/legal/privacy-policy/" target="_blank"> Log in</a>.</span>
                 </div>
             </div>
         </div>
-
-    
   </div>
 
 
@@ -179,9 +190,66 @@
                      if(item!=el)  
                          item.checked = false;  
                  });  
-             }  
+             }
+                let form = document.querySelector("#form")
+                let email = document.querySelector("#email").value
+                let confirmEmail = document.querySelector("#confirm-email").value
+                let password = document.querySelector("#password").value
+                let nickName = document.querySelector("#nickname").value
+                let day = document.querySelector("#day").value
+                let month = document.querySelector("#month")
+                let year = document.querySelector("#year").value
+                
 
-    </script>
+                form.addEventListener("submit", (e) => {
+                    e.preventDefault()
+
+                    checkInputs()
+                })
+
+                function checkInputs(){
+                    //get the values from the inputs
+                    let emailValue = email
+                    console.log(emailValue)
+                    let confirmEmailValue = confirmEmail
+                    let passwordValue = password
+                    let nickNameValue = nickName
+                    let dayValue = day
+                    let monthValue = month
+                    let yearValue = year
+
+                    if(emailValue ===""){
+                        setErrorFor(email, "You need to enter your email.")
+                    } else{
+                        setSuccessFor(email)
+                    }
+                }
+                function setErrorFor(input, message){
+                     let formControl = input.parentElement
+                     let small = document.querySelector("small") 
+                }
+
+
+
+
+
+
+                /*
+                let validation = document.getElementsByClassName("form-control")
+                
+                let warning = (event) => {
+                event.currentTarget.style.border="1px red solid"
+                };
+                let correct = (event) =>{
+                    event.currentTarget.style.border ="1px grey solid"
+                }
+
+                for (let i = 0; i < validation.length; i++) {
+                validation[i].addEventListener("click", correct);
+              }*/
+ 
+              </script>
+               
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
