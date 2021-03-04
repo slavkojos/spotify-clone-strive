@@ -165,14 +165,7 @@ hr {
 #seek-bar-container {
   width: 100%;
 }
-#seek-bar {
-  height: 3px;
-  width: 80%;
-  background-color: #535353;
-  border-radius: 20px;
-  position: relative;
-  top: 7px;
-}
+
 #volume-controls img {
   width: 20px;
   height: 20px;
