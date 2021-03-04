@@ -415,6 +415,10 @@ div.yeni-ler {
     position: relative;
   }
 
+  div.yeni-ler p {
+    margin-bottom: 0.2rem;
+  }
+
   div.yeni-ler h3 {
     padding-top: 40px;
     text-align: center;
