@@ -365,16 +365,16 @@
           </div>
           <div id="player-controls-mid" class="d-flex flex-column justify-content-center align-items-center">
             <div class="player-buttons d-flex justify-content-center align-items-center mb-3 w-100">
-              <img class="d-none d-lg-block" src="/assets/shuffle.svg" alt="" />
+              <img id="shuffle-button" class="d-none d-lg-block" src="/assets/shuffle.svg" alt="" />
               <img id="prev-track" src="/assets/previous_track.svg" alt="" />
               <img id="play-button" class="p-2" src="/assets/playbutton.svg" alt="" />
               <img id="pause-button" class="d-none p-2" src="/assets/pausebutton.svg" alt="" />
               <img id="next-track" src="/assets/next_track.svg" alt="" />
-              <img class="d-none d-lg-block" src="/assets/repeat.svg" alt="" />
+              <img id="repeat-button" class="d-none d-lg-block" src="/assets/repeat.svg" alt="" />
             </div>
             <div id="seek-bar-container" class="d-flex flex-row pl-lg-5">
-              <span id="current-time" class="mx-1">00:00</span>
-              <div id="seek-bar" class="progress">
+              <span id="current-time" class="">00:00</span>
+              <!--  <div id="seek-bar" class="progress">
                 <div
                   class="progress-bar"
                   role="progressbar"
@@ -382,21 +382,16 @@
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
-              </div>
-              <span id="total-time" class="mx-1">03:12</span>
+              </div> -->
+              <input type="range" name="" id="seek" min="0" value="0" max="100" />
+              <span id="total-time" class="">03:12</span>
             </div>
           </div>
           <div id="volume-controls" class="p-3 d-none d-lg-flex justify-content-center align-items-center">
-            <img class="mx-2" src="/assets/volume.svg" alt="" />
-            <div class="volume-bar">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="0"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
+            <img id="mute-button" class="mx-2" src="/assets/volume.svg" alt="" />
+            <img id="unmute-button" class="d-none mx-2" src="/assets/mute.svg" alt="" />
+            <div class="progress-bar"></div>
+            <input type="range" name="" id="volume" min="0" value="50" max="100" />
           </div>
         </div>
       </div>

@@ -347,14 +347,23 @@ const playButton = document.getElementById("play-button");
 const pauseButton = document.getElementById("pause-button");
 const prevTrack = document.getElementById("prev-track");
 const nextTrack = document.getElementById("next-track");
+const repeatButton = document.getElementById("repeat-button");
+const shuffleButton = document.getElementById("shuffle-button");
+const muteButton = document.getElementById("mute-button");
+const unmuteButton = document.getElementById("unmute-button");
 const currentTime = document.getElementById("current-time");
 const totalTime = document.getElementById("total-time");
-const seekBar = document.getElementById("seek-bar");
+const seekSlider = document.getElementById("seek");
 let currentTrack = document.createElement("audio");
+
 currentTrack.src = albumData.tracks.data[0].preview;
 currentTrack.load();
 let isPlaying = false;
 let trackIndex = 0;
+let isRepeatOn = false;
+let isShuffleOn = false;
+let isMuteOn = false;
+let updateTimer;
 
 const playTrackButton = document.getElementsByClassName("song-id");
 function pickTrack(event) {
@@ -363,6 +372,8 @@ function pickTrack(event) {
 }
 
 function loadTrack() {
+  clearInterval(updateTimer);
+  resetValues();
   for (let i = 0; i < playTrackButton.length; i++) {
     playTrackButton[i].classList.remove("now-playing");
   }
@@ -370,6 +381,11 @@ function loadTrack() {
   playerSongName.innerText = albumData.tracks.data[trackIndex].title;
   currentTrack.src = albumData.tracks.data[trackIndex].preview;
   currentTrack.load();
+  currentTrack.addEventListener("loadedmetadata", function () {
+    console.log(currentTrack.duration);
+  });
+  updateTimer = setInterval(seekUpdate, 500);
+  setVolume();
   playTrack();
 }
 
@@ -408,8 +424,46 @@ for (let i = 0; i < playTrackButton.length; i++) {
 }
 playButton.addEventListener("click", playpauseTrack);
 pauseButton.addEventListener("click", playpauseTrack);
-nextTrack.addEventListener("click", playNextTrack);
-prevTrack.addEventListener("click", playPrevTrack);
+nextTrack.addEventListener("click", function () {
+  if (isShuffleOn) {
+    shuffleTrack();
+  } else playNextTrack();
+});
+prevTrack.addEventListener("click", function () {
+  if (isShuffleOn) {
+    shuffleTrack();
+  } else playPrevTrack();
+});
+repeatButton.addEventListener("click", function () {
+  repeatButton.classList.toggle("active-button");
+  isRepeatOn ^= true;
+});
+shuffleButton.addEventListener("click", function () {
+  shuffleButton.classList.toggle("active-button");
+  isShuffleOn ^= true;
+});
+muteButton.addEventListener("click", function () {
+  isMuteOn = true;
+  volumeSlider.value = 0;
+  setVolume();
+  muteButton.classList.toggle("d-none");
+  unmuteButton.classList.toggle("d-none");
+});
+unmuteButton.addEventListener("click", function () {
+  isMuteOn = false;
+  volumeSlider.value = 50;
+  setVolume();
+  muteButton.classList.toggle("d-none");
+  unmuteButton.classList.toggle("d-none");
+});
+currentTrack.addEventListener("ended", function () {
+  if (isShuffleOn) {
+    shuffleTrack();
+  } else if (isRepeatOn) {
+    playTrack();
+  } else playNextTrack();
+});
+seekSlider.addEventListener("change", seekTo);
 
 function playpauseTrack() {
   if (!isPlaying) playTrack();
@@ -419,5 +473,46 @@ function playpauseTrack() {
 function resetValues() {
   currentTime.textContent = "00:00";
   totalTime.textContent = "00:30";
-  seek_slider.value = 0;
+  seekSlider.value = 0;
+}
+
+function seekTo() {
+  let seekto = currentTrack.duration * (seekSlider.value / 100);
+  currentTrack.currentTime = seekto;
+}
+
+let volumeSlider = document.getElementById("volume");
+setVolume();
+volumeSlider.addEventListener("input", setVolume);
+
+function setVolume() {
+  currentTrack.volume = volumeSlider.value / 100;
+}
+
+function shuffleTrack() {
+  trackIndex = Math.floor(Math.random() * (playTrackButton.length - 1 - 0 + 1));
+  loadTrack();
+}
+
+function seekUpdate() {
+  let currentMinutes = Math.floor(currentTrack.currentTime / 60);
+  let currentSeconds = Math.floor(currentTrack.currentTime - currentMinutes * 60);
+  let durationMinutes = Math.floor(currentTrack.duration / 60);
+  let durationSeconds = Math.floor(currentTrack.duration - durationMinutes * 60);
+  if (currentSeconds < 10) {
+    currentSeconds = "0" + currentSeconds;
+  }
+  if (durationSeconds < 10) {
+    durationSeconds = "0" + durationSeconds;
+  }
+  if (currentMinutes < 10) {
+    currentMinutes = "0" + currentMinutes;
+  }
+  if (durationMinutes < 10) {
+    durationMinutes = "0" + durationMinutes;
+  }
+  seekSlider.value = Math.floor((currentTrack.currentTime / currentTrack.duration) * 100);
+  console.log(seekSlider.value);
+  currentTime.textContent = currentMinutes + ":" + currentSeconds;
+  totalTime.textContent = durationMinutes + ":" + durationSeconds;
 }
