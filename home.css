@@ -1,7 +1,7 @@
 * {
     color: white !important;
 }
-.container {
+body > div.row.vh-100 > div.container.col-10 {
     background: rgb(25,20,20);
     background: linear-gradient(320deg, rgba(25,20,20,1) 0%, rgba(36,69,108,1) 100%);
 }
