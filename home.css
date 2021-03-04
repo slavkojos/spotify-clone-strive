@@ -16,7 +16,7 @@
     background-color: inherit;   
 }
 
-span{
+span.button{
     font-size: 10px;
     cursor: pointer;
 }
