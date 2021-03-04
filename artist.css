@@ -301,7 +301,7 @@ div.yeni-ler {
   }
 
   .bg-img {
-    background: url(./assets-helper/about14.jfif) no-repeat center center/cover;
+    background: url(assets/about14.jfif) no-repeat center center/cover;
     box-shadow: inset 100px 100px 200px rgba(0, 0, 0, 0.5), inset -100px -100px 200px rgba(0, 0, 0, 0.5);
   }
 
