@@ -60,7 +60,7 @@
                 </div></a
               >
               <hr class="my-3 mx-0" />
-              <a href="" class="text-decoration-none px-2"
+              <a href="log-in.html" class="text-decoration-none px-2"
                 ><div class="link-container pl-1 d-flex justify-content-start align-items-end">
                   <img id="user-img" class="mr-0 mr-0 mr-lg-3 p-0" src="/assets/user.svg" alt="" />
                   <span class="sidebar-links font-weight-bold text-white d-none d-lg-block">Spotify user</span>
@@ -364,34 +364,24 @@
             </div>
           </div>
           <div id="player-controls-mid" class="d-flex flex-column justify-content-center align-items-center">
-            <div class="player-buttons d-flex justify-content-center align-items-center mb-3">
-              <img class="d-none d-lg-block" src="/assets/shuffle.svg" alt="" />
-              <img src="/assets/previous_track.svg" alt="" />
+            <div class="player-buttons d-flex justify-content-center align-items-center mb-3 w-100">
+              <img id="shuffle-button" class="d-none d-lg-block" src="/assets/shuffle.svg" alt="" />
+              <img id="prev-track" src="/assets/previous_track.svg" alt="" />
               <img id="play-button" class="p-2" src="/assets/playbutton.svg" alt="" />
-              <img src="/assets/next_track.svg" alt="" />
-              <img class="d-none d-lg-block" src="/assets/repeat.svg" alt="" />
+              <img id="pause-button" class="d-none p-2" src="/assets/pausebutton.svg" alt="" />
+              <img id="next-track" src="/assets/next_track.svg" alt="" />
+              <img id="repeat-button" class="d-none d-lg-block" src="/assets/repeat.svg" alt="" />
             </div>
-            <div id="seek-bar">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="0"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div id="seek-bar-container" class="d-flex flex-row pl-lg-5">
+              <span id="current-time" class="">00:00</span>
+              <input type="range" name="" id="seek" min="0" value="0" max="100" />
+              <span id="total-time" class="">00:30</span>
             </div>
           </div>
           <div id="volume-controls" class="p-3 d-none d-lg-flex justify-content-center align-items-center">
-            <img class="mx-2" src="/assets/volume.svg" alt="" />
-            <div class="volume-bar">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="0"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
+            <img id="mute-button" class="mx-2" src="/assets/volume.svg" alt="" />
+            <img id="unmute-button" class="d-none mx-2" src="/assets/mute.svg" alt="" />
+            <input type="range" name="" id="volume" min="0" value="50" max="100" />
           </div>
         </div>
       </div>
@@ -410,5 +400,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="player.js"></script>
   </body>
 </html>
