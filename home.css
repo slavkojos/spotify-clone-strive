@@ -1,4 +1,4 @@
-* {
+h2, p, span, i, a {
   color: white !important;
 }
 @font-face {
@@ -108,13 +108,22 @@ span.button {
   height: 30px;
 }
 
+.song-container:hover,
+#sidebar a:hover {
+  background-color: rgba(71, 71, 71, 0.349);
+  border-radius: 5px;
+}
+#sidebar a:hover {
+  filter: brightness(200%);
+}
+
 .sidebar-links,
 .artist-name,
 .album-year-songs,
 #desktop-logo,
 .artist-name,
 .song-duration {
-  color: #b3b3b3;
+  color: #b3b3b3 !important;
 }
 
 @media (min-width: 240px) {
