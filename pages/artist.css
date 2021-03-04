@@ -284,7 +284,33 @@ div.yeni-ler {
   display: none;
 }
 
+#carouselExampleControls {
+  display: none;
+}
+
 @media (max-width: 576px) {
+  #carouselExampleControls {
+    display: block;
+    height: 250px;
+    width: 250px;
+  }
+
+  #carouselExampleControls img {
+    border-radius: 50%;
+  }
+
+  #carouselExampleControls p {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  h3.fans-like {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+  }
+
   section {
     height: 300px;
   }
@@ -440,5 +466,9 @@ div.yeni-ler {
 
   .show {
     display: none !important;
+  }
+
+  div.bg-mine {
+    min-height: 900px;
   }
 }
