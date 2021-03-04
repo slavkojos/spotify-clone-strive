@@ -443,4 +443,7 @@ div.yeni-ler {
   .show {
     display: none !important;
   }
+  div.col-7 p {
+    margin-bottom: 4px;
+  }
 }
