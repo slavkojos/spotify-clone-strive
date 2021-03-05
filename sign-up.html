@@ -56,7 +56,7 @@
       <h2 class="sign-up-email pb-1">Sign up with your email address</h2>
 
             <!-- Form -->
-        <form class="needs-validation " novalidate> 
+        <form class="needs-validation" action="index.html" novalidate> 
           <div class="row pb-4">
             <div class="col-sm-12 ">
               <label for="email" >What's your email?</label>
@@ -169,15 +169,15 @@
     </div>
             <div class="row">
               <div class="col-sm-12">
-                  <form action="/index.html">
+                  
                   <button type="submit" class="sign-up button">Sign up</button>
-                </form>
+        </form>
               </div>
             </div>
         <div class="row">
             <div class="col-sm-12">
                 <div class="login-again">
-                    <span>Have an account?<a href="/ie/legal/privacy-policy/" target="_blank"> Log in</a>.</span>
+                    <span>Have an account?<a href="log-in.html"> Log in</a>.</span>
                 </div>
             </div>
         </div>
@@ -190,11 +190,11 @@
     <!-- Optional JavaScript; choose one of the two! -->
     <script>
         function check(el){  
-                 var gender = document.getElementsByName("gender");  
+                 var gender = document.getElementsByName("gender")
                  gender.forEach(function(item){  
                      if(item!=el)  
-                         item.checked = false;  
-                 });  
+                         item.checked = false
+                 })  
              }
       </script>
                
@@ -211,12 +211,12 @@
       <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
-          ("use strict");
+          ("use strict")
           window.addEventListener(
             "load",
             function () {
               // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              var forms = document.getElementsByClassName("needs-validation");
+              var forms = document.getElementsByClassName("needs-validation")
               // Loop over them and prevent submission
               var validation = Array.prototype.filter.call(
                 forms,
@@ -228,16 +228,16 @@
                         event.preventDefault();
                         event.stopPropagation();
                       }
-                      form.classList.add("was-validated");
+                      form.classList.add("was-validated")
                     },
                     false
-                  );
+                  )
                 }
-              );
+              )
             },
             false
-          );
-        })();
+          )
+        })()
       </script>
        <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -248,9 +248,9 @@
               // check element validity and change class
               $(this)
                 .removeClass("is-valid is-invalid")
-                .addClass(this.checkValidity() ? "" : "is-invalid");
-            });
-        })();
+                .addClass(this.checkValidity() ? "" : "is-invalid")
+            })
+        })()
       </script>
     
   </body>
