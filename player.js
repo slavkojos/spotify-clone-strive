@@ -473,7 +473,7 @@ function loadTrack() {
   currentTrack.addEventListener("loadedmetadata", function () {
     console.log(currentTrack.duration);
   });
-  updateTimer = setInterval(seekUpdate, 400);
+  updateTimer = setInterval(seekUpdate, 500);
   setVolume();
   playTrack();
 }
@@ -563,11 +563,14 @@ function resetValues() {
   currentTime.textContent = "00:00";
   totalTime.textContent = "00:30";
   seekSlider.value = 0;
+  seekSlider.style.background = `linear-gradient(90deg, rgba(29,185,84,1) 0%, rgba(83, 83, 83, 1) 0%)`;
 }
 
 function seekTo() {
   let seekto = currentTrack.duration * (seekSlider.value / 100);
   currentTrack.currentTime = seekto;
+  seekSlider.value = Math.floor((currentTrack.currentTime / currentTrack.duration) * 100);
+  seekSlider.style.background = `linear-gradient(90deg, rgba(29,185,84,1) ${seekSlider.value}%, rgba(83, 83, 83, 1) ${seekSlider.value}%)`;
 }
 
 let volumeSlider = document.getElementById("volume");
