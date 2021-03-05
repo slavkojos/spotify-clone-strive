@@ -183,9 +183,16 @@ hr {
 #seek {
   height: 4px;
   width: 100px;
-  background: #555;
+  /* background: #555; */
   border-radius: 20px;
+  background-color: rgba(83, 83, 83, 1);
 }
+
+#volume {
+  background: rgb(179, 179, 179);
+  /* background: linear-gradient(90deg, rgba(179, 179, 179, 1) 50%, rgba(83, 83, 83, 1) 50%); */
+}
+
 #seek {
   width: 80%;
   position: relative;

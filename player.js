@@ -473,7 +473,7 @@ function loadTrack() {
   currentTrack.addEventListener("loadedmetadata", function () {
     console.log(currentTrack.duration);
   });
-  updateTimer = setInterval(seekUpdate, 500);
+  updateTimer = setInterval(seekUpdate, 400);
   setVolume();
   playTrack();
 }
@@ -576,6 +576,7 @@ volumeSlider.addEventListener("input", setVolume);
 
 function setVolume() {
   currentTrack.volume = volumeSlider.value / 100;
+  volumeSlider.style.background = `linear-gradient(90deg, rgba(29,185,84,1) ${volumeSlider.value}%, rgba(83, 83, 83, 1) ${volumeSlider.value}%)`;
 }
 
 function shuffleTrack() {
@@ -601,7 +602,7 @@ function seekUpdate() {
     durationMinutes = "0" + durationMinutes;
   }
   seekSlider.value = Math.floor((currentTrack.currentTime / currentTrack.duration) * 100);
-  console.log(seekSlider.value);
+  seekSlider.style.background = `linear-gradient(90deg, rgba(29,185,84,1) ${seekSlider.value}%, rgba(83, 83, 83, 1) ${seekSlider.value}%)`;
   currentTime.textContent = currentMinutes + ":" + currentSeconds;
   totalTime.textContent = durationMinutes + ":" + durationSeconds;
 }
